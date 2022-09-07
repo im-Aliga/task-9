@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wheelsall{
+    display: flex;
+    position: absolute;
+    margin-left: 22px;
+    justify-content: space-around;
+    top: 29%;
+    
+}
+.leftwheel{
+    margin-left: 50px;
+}
+.wheelsall img{
+    width: 15%;
+    animation: firlanma 1s linear infinite;
+}
+.contanier{
+    position: relative;
+    animation: qalxma 2s linear infinite;
+}
+@keyframes qalxma {
+    0%{
+        transform: translateY(2px);
+    }
+   
+    100%{
+        transform: translateY(-2px);
+    }
+   
+}
+@keyframes firlanma{
+   100%{
+    transform: rotate(360deg);
+   }
+}
+.road{
+    position: absolute;
+    width: 100%;
+    top: -80%;
+    right: 290px;
+    z-index: -1;
+    animation: yol 10s linear infinite;
+    
+}
+.road img{
+    width: 150%;  
+}
+@keyframes yol{
+    0%{
+
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(-75%);
+    }
+        
+    
+   
+}
+
